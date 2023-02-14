@@ -7,6 +7,7 @@ namespace dotnetflix.Data
     {
         public Dbdotnetflix(DbContextOptions<Dbdotnetflix> options) : base(options) { }
 
+        public DbSet<Autor>Autores { get; set; }
 
     }
 }
