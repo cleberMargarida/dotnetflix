@@ -8,6 +8,7 @@
         public string LinkChannel { get; set; }
         public string LinkLikedin { get; set; }
         public string Language { get; set; }
+       
 
     }
 }
