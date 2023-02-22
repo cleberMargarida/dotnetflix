@@ -1,6 +1,8 @@
-html {
-  font-size: 14px;
+﻿@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
 }
+
 
 @media (min-width: 768px) {
   html {
@@ -135,4 +137,6 @@ h6 {
     position: relative;
     top: 43px;
 }
+
+=======
 
