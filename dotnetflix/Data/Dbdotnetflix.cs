@@ -9,12 +9,17 @@ namespace dotnetflix.Data
 
         public DbSet<Author> Authors { get; set; }
         public DbSet<Tutorial> Tutorials { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Tutorial>()
                 .HasOne(a => a.Author);
+
+            modelBuilder.Entity<Usuario>()
+           .HasMany(b => b.MeusFavoritos);
+           
         }
     }
 }
