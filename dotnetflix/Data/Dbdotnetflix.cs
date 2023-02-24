@@ -18,7 +18,7 @@ namespace dotnetflix.Data
                 .HasOne(a => a.Author);
 
             modelBuilder.Entity<Usuario>()
-           .HasMany(b => b.MeusFavoritos);
+                .HasMany(b => b.MeusFavoritos);
            
         }
     }
